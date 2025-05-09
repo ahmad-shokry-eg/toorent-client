@@ -28,7 +28,7 @@ func main() {
 
 	fmt.Println("Fetching metadata...")
 
-	// Wait for the metadata to be ready with a timeout
+	// Wait for the metadata to be ready
 	select {
 	case <-t.GotInfo():
 		fmt.Println("Metadata fetched successfully.")
